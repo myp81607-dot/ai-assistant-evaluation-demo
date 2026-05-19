@@ -1,0 +1,6 @@
+doc_id,title,content
+doc_001,RAG基础,RAG是检索增强生成。它通过先检索知识库内容，再让大语言模型基于资料回答问题，从而减少幻觉。
+doc_002,Agent基础,Agent是在大语言模型基础上加入规划、工具调用和执行循环的系统，适合处理多步骤任务。
+doc_003,Bad Case分析,Bad case是AI模型表现不好的案例，例如幻觉、答非所问、遗漏重点、格式错误或引用错误。
+doc_004,Response Evaluation,Response evaluation是对AI回答质量进行评估的过程，常见维度包括准确性、完整性、是否基于资料、清晰度和格式稳定性。
+doc_005,Knowledge Base,知识库是AI系统可以检索和引用的资料集合，可以包括文档、FAQ、制度、产品说明和项目材料。
