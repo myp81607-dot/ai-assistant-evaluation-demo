@@ -1,0 +1,7 @@
+question_id,question
+q001,RAG是什么？请用非技术语言解释。
+q002,Agent和普通AI助手有什么区别？
+q003,什么是bad case？
+q004,如何判断一个AI回答是否有幻觉？
+q005,Response evaluation有哪些维度？
+q006,如果知识库里没有答案，AI应该怎么回答？
