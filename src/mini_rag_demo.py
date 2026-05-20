@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
@@ -10,7 +11,7 @@ def load_data():
 
 
 def build_retriever(kb):
-    vectorizer = TfidfVectorizer()
+    vectorizer = TfidfVectorizer(analyzer="char", ngram_range=(2, 4))
     doc_vectors = vectorizer.fit_transform(kb["content"])
     return vectorizer, doc_vectors
 
@@ -75,6 +76,7 @@ def main():
         })
 
     output = pd.DataFrame(rows)
+    os.makedirs("outputs", exist_ok=True)
     output.to_csv("outputs/evaluation_results.csv", index=False, encoding="utf-8-sig")
 
     print("Evaluation finished. Results saved to outputs/evaluation_results.csv")
