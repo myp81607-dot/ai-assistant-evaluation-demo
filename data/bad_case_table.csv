@@ -1,1 +1,6 @@
-
+case_id,user_question,expected_answer,model_answer,error_type,possible_reason,fix_suggestion,priority,status
+case_001,如果知识库里没有答案AI应该怎么回答？,应说明资料不足，不能编造答案。,AI可以根据常识补充一个合理答案。,幻觉/边界控制失败,Prompt没有明确要求资料不足时拒答,加入“资料不足时必须说明无法确认”的规则,High,Open
+case_002,RAG是什么？,应说明RAG是先检索资料再生成回答。,RAG是一种新的大模型训练方法。,概念错误,模型混淆了应用方法和训练方法,补充RAG定义并增加概念测试题,High,Open
+case_003,Agent和普通AI助手有什么区别？,应强调Agent有规划和工具调用能力。,两者没有明显区别。,遗漏重点,回答没有覆盖规划和工具调用,优化prompt要求对比回答,Medium,Open
+case_004,什么是bad case？,应说明是模型表现不好的案例并举例。,Bad case就是坏数据。,过度简化,回答过短且缺少例子,要求回答包含定义和例子,Medium,Open
+case_005,Response evaluation有哪些维度？,应包含准确性、完整性、groundedness、清晰度、格式等。,只需要看回答是否流畅。,评价维度缺失,评价标准过窄,建立多维评分表,Medium,Open
