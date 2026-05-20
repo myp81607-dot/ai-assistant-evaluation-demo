@@ -1,1 +1,3 @@
-
+question_id,question,retrieved_doc_id,retrieved_title,similarity_score,answer,grounded,has_context,comment
+q001,RAG是什么？请用非技术语言解释。,doc_001,RAG基础,0.8123,根据知识库资料：RAG是检索增强生成。它通过先检索知识库内容，再让大语言模型基于资料回答问题，从而减少幻觉。,True,True,Demo evaluation only. Manual review is still needed.
+q002,Agent和普通AI助手有什么区别？,doc_002,Agent基础,0.7642,根据知识库资料：Agent是在大语言模型基础上加入规划、工具调用和执行循环的系统，适合处理多步骤任务。,True,True,Demo evaluation only. Manual review is still needed.
