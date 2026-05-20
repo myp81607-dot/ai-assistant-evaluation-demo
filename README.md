@@ -38,6 +38,7 @@ ai-assistant-evaluation-demo/
 │   ├── test_questions.csv
 │   └── bad_case_table.csv
 └── outputs/
+This demo uses TF-IDF as a lightweight substitute for embedding-based retrieval. It focuses on demonstrating the evaluation workflow rather than building a production-level RAG system.
     └── evaluation_results.csv
 
 pip install -r requirements.txt
